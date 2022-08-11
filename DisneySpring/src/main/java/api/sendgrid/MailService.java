@@ -19,7 +19,7 @@ public class MailService {
 
         Mail mail = new Mail(from, subject, to, content);
 
-        SendGrid sendGrid = new SendGrid("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");
+        SendGrid sendGrid = new SendGrid("token");
 
         Request request = new Request();
         request.setMethod(Method.POST);
