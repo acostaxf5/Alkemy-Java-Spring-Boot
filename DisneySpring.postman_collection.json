@@ -1,0 +1,664 @@
+{
+	"info": {
+		"_postman_id": "bff53a21-8afd-4fa4-b675-2fb7db54e744",
+		"name": "DisneySpring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "IMAGENES",
+			"item": [
+				{
+					"name": "OBTENER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/imagenes/obtener/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"imagenes",
+								"obtener",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GUARDAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "imagen",
+									"type": "file",
+									"src": "/C:/DOCUMENTOS/Imágenes/Mascotas/F003.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/imagenes/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"imagenes",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/imagenes/eliminar/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"imagenes",
+								"eliminar",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PERSONAJES",
+			"item": [
+				{
+					"name": "OBTENER TODOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/personajes/obtener-todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personajes",
+								"obtener-todos"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "Facundo",
+									"disabled": true
+								},
+								{
+									"key": "edad",
+									"value": "25",
+									"disabled": true
+								},
+								{
+									"key": "peso",
+									"value": "25.0",
+									"disabled": true
+								},
+								{
+									"key": "id_pelicula",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OBTENER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/personajes/obtener/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personajes",
+								"obtener",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OBTENER IMAGEN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/personajes/obtener/1/obtener-imagen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personajes",
+								"obtener",
+								"1",
+								"obtener-imagen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GUARDAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Personaje\",\r\n    \"edad\": 25,\r\n    \"peso\": 25.0,\r\n    \"historia\": \"Historia del Personaje\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/personajes/guardar/obtener-imagen/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personajes",
+								"guardar",
+								"obtener-imagen",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/personajes/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"personajes",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GENERO",
+			"item": [
+				{
+					"name": "OBTENER TODOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/genero/obtener-todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero",
+								"obtener-todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OBTENER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/genero/obtener/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero",
+								"obtener",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OBTENER IMAGEN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/genero/obtener/1/obtener-imagen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero",
+								"obtener",
+								"1",
+								"obtener-imagen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GUARDAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Comedia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/genero/guardar/obtener-imagen/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero",
+								"guardar",
+								"obtener-imagen",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/genero/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PELICULAS",
+			"item": [
+				{
+					"name": "OBTENER TODOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/peliculas/obtener-todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peliculas",
+								"obtener-todos"
+							],
+							"query": [
+								{
+									"key": "titulo",
+									"value": "Pelicula",
+									"disabled": true
+								},
+								{
+									"key": "id_genero",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "orden",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OBTENER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/peliculas/obtener/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peliculas",
+								"obtener",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OBTENER IMAGEN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/peliculas/obtener/2/obtener-imagen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peliculas",
+								"obtener",
+								"2",
+								"obtener-imagen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GUARDAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_imagen",
+									"value": "9",
+									"type": "default"
+								},
+								{
+									"key": "titulo",
+									"value": "Rapidos y Furiosos",
+									"type": "default"
+								},
+								{
+									"key": "fecha_creacion",
+									"value": "2022/08/07",
+									"type": "default"
+								},
+								{
+									"key": "calificacion",
+									"value": "5",
+									"type": "default"
+								},
+								{
+									"key": "id_genero",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "id_personajes",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "id_personajes",
+									"value": "4",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/peliculas/guardar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peliculas",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AGREGAR PERSONAJE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/peliculas/obtener/1/agregar-personaje/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peliculas",
+								"obtener",
+								"1",
+								"agregar-personaje",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/peliculas/eliminar/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peliculas",
+								"eliminar",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR PERSONAJE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/peliculas/obtener/1/eliminar-personaje/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"peliculas",
+								"obtener",
+								"1",
+								"eliminar-personaje",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USUARIOS",
+			"item": [
+				{
+					"name": "SALIR",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/autenticacion/salir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"autenticacion",
+								"salir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INGRESAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"correo\": \"acostaxf5@gmail.com\",\r\n    \"clave\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/autenticacion/ingresar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"autenticacion",
+								"ingresar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REGISTRAR",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"correo\": \"acostaxf5@gmail.com\",\r\n    \"clave\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/autenticacion/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"autenticacion",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ELIMINAR",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/autenticacion/eliminar/acostaxf5@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"autenticacion",
+								"eliminar",
+								"acostaxf5@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
